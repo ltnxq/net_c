@@ -1,0 +1,10 @@
+﻿  servernetWin.cpp
+D:\zyz\java\project\study\c++_server_zyz\servernetWin\net\chart1\IOCPEchoServ_win.h(45,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'HANDLE'
+D:\zyz\java\project\study\c++_server_zyz\servernetWin\net\chart1\IOCPEchoServ_win.h(45,10): warning C4313: 'printf': '%d' in format string conflicts with argument 1 of type 'HANDLE'
+D:\zyz\java\project\study\c++_server_zyz\servernetWin\net\chart1\IOCPEchoServ_win.h(75,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'SOCKET'
+D:\zyz\java\project\study\c++_server_zyz\servernetWin\net\chart1\IOCPEchoServ_win.h(75,10): message : consider using '%lld' in the format string
+D:\zyz\java\project\study\c++_server_zyz\servernetWin\net\chart1\IOCPEchoServ_win.h(75,10): message : consider using '%Id' in the format string
+D:\zyz\java\project\study\c++_server_zyz\servernetWin\net\chart1\IOCPEchoServ_win.h(75,10): message : consider using '%I64d' in the format string
+D:\zyz\java\project\study\c++_server_zyz\servernetWin\net\chart1\IOCPEchoServ_win.h(88,11): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'HANDLE'
+D:\zyz\java\project\study\c++_server_zyz\servernetWin\net\chart1\IOCPEchoServ_win.h(88,11): warning C4313: 'printf': '%d' in format string conflicts with argument 1 of type 'HANDLE'
+  servernetWin.vcxproj -> D:\zyz\java\project\study\c++_server_zyz\base_study\x64\Debug\servernetWin.exe

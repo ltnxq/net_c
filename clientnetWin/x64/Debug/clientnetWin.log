@@ -1,0 +1,4 @@
+﻿  clinetnetWin.cpp
+D:\zyz\java\project\study\c++_server_zyz\clientnetWin\net\chart1\echo_clinet_win.h(44,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zyz\java\project\study\c++_server_zyz\clientnetWin\net\chart1\echo_clinet_win.h(12,10): warning C4101: 'wsaData': unreferenced local variable
+  clientnetWin.vcxproj -> D:\zyz\java\project\study\c++_server_zyz\base_study\x64\Debug\clientnetWin.exe
