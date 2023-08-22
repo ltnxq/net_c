@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zyz/share_dir/zyz_net_muduo/cmake/mathfunction/MakeTable.cpp
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+
