@@ -1,0 +1,1 @@
+g++  -g -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic  -O0 -Wall -g2 -ggdb  -rdynamic CMakeFiles/watchPoint.dir/watchPoint.cpp.o  -o bin/watchPoint -lpthread 

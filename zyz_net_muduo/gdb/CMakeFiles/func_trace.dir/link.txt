@@ -1,0 +1,1 @@
+g++  -g -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic  -O0 -Wall -g2 -ggdb  -rdynamic CMakeFiles/func_trace.dir/func_trace.cpp.o  -o bin/func_trace 

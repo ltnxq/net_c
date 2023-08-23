@@ -1,0 +1,56 @@
+cmake_minimum_required (VERSION 2.6)
+
+
+project(gdb_study CXX)
+if(NOT CMAKE_BUILD_TYPE)
+	set(CMAKE_BUILD_TYPE "debug")
+endif()
+
+set(CXX_FLAGS
+ -g
+ # -DVALGRIND
+ # -DMUDUO_STD_STRING
+ -Wall
+ -Wextra
+ # -m32
+ -Werror
+ -Wconversion
+ -Wno-unused-parameter
+ -Wold-style-cast
+ -Woverloaded-virtual
+ -Wpointer-arith
+ -Wshadow
+ -Wwrite-strings
+ -march=native
+ # -MMD
+ # -std=c++0x
+ -rdynamic
+ )
+string(REPLACE ";" " " CMAKE_CXX_FLAGS "${CXX_FLAGS}")
+
+
+
+set(CMAKE_CXX_COMPILER "g++")
+set(CMAKE_CXX_FLAGS_DEBUG "-O0")
+set(CMAKE_CXX_FLAGS_RELEASE "-O2 -finline-limit=1000 -DNDEBUG")
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+#静态库 .a的生成路径
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+
+#支持gdb调试
+SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
+SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
+
+
+add_executable(printMemoryValue printMemoryValue.cpp)
+add_executable(func_trace func_trace.cpp)
+
+add_executable(watchPoint watchPoint.cpp)
+target_link_libraries(watchPoint pthread )
+
+add_executable(breakPoint breakPoint.cpp)
+
+add_executable(checkpoint checkpoint.cpp)
+
+
+
